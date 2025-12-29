@@ -1,2 +1,2 @@
-:HL["/_next/static/chunks/0b43bba2e6a6b771.css","style"]
-0:{"buildId":"3apg8ysxE1Jmz5iUwtv8A","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+:HL["/dev-ada-website/_next/static/chunks/e2933d998c16b47e.css","style"]
+0:{"buildId":"9UYYqqypkC8o2piip0WTD","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}

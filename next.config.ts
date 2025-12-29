@@ -2,9 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "export",
-  images: {
-    unoptimized: true,
-  },
+  basePath: "/dev-ada-website",  // add this
+  images: { unoptimized: true },
 };
 
 export default nextConfig;
