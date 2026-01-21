@@ -4,7 +4,7 @@ const PM_SIGNUP_LINK = "https://forms.gle/h4AjUQmiE6waA6dy5";
 const PARTICIPANT_SIGNUP_LINK = "https://forms.gle/bY7mUqTZZ4tSu5HR8";
 const SLACK_LINK = "https://wcs-uiuc.slack.com/join/shared_invite/zt-1tut8j6pi-51ilAwG8CNmYNolsQP25ew";
 const WCS_WEBSITE = "https://wcs.illinois.edu/";
-const BASE_PATH = "/public";
+const BASE_PATH = "";
 
 const timelineEvents = [
   { date: "NOV 12", title: "Info Session", description: "Introduction to Dev Ada: learn about Dev Ada and find your partners for the year!" },
