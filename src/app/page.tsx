@@ -4,6 +4,7 @@ const PM_SIGNUP_LINK = "https://forms.gle/h4AjUQmiE6waA6dy5";
 const PARTICIPANT_SIGNUP_LINK = "https://forms.gle/bY7mUqTZZ4tSu5HR8";
 const SLACK_LINK = "https://wcs-uiuc.slack.com/join/shared_invite/zt-1tut8j6pi-51ilAwG8CNmYNolsQP25ew";
 const WCS_WEBSITE = "https://wcs.illinois.edu/";
+const BASE_PATH = "/dev-ada-website";
 
 const timelineEvents = [
   { date: "NOV 12", title: "Info Session", description: "Introduction to Dev Ada: learn about Dev Ada and find your partners for the year!" },
@@ -28,6 +29,19 @@ const faqs = [
   { question: "What is the time commitment for this?", answer: "You will need to be available for the weekly meetings with your mentor, the midpoint and the final presentation. Besides this, it depends on you and your team." },
   {question: "I don't have a team yet. How can I find one?", answer: "We will match people without teams at the Kickoff Meeting."},
   {question: "How will official communication occur during the project cycle?", answer:"We will use Discord to communicate with participants."},
+];
+
+const pastProjects = [
+  { 
+    name: "PrairieLearn Chrome Extension", 
+    image: `${BASE_PATH}/prairielearn-extension.png`,
+    github: "https://github.com/emb0ro/devada-2025" 
+  },
+  { 
+    name: "IncluSite", 
+    image: `${BASE_PATH}/inclusite.jpg`,
+    github: "https://github.com/aditi135/IncluSite" 
+  },
 ];
 
 export default function Home() {
@@ -198,25 +212,24 @@ export default function Home() {
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-8  text-black">Past Projects</h2>
-          <div className="bg-white border border-[#a4dddf] p-8 rounded-2xl inline-block">
-            <h3 className="font-bold text-lg mb-2  text-black">PrairieLearn Chrome Extension</h3>
-            <Link
-              href="https://github.com/emb0ro/devada-2025"
-              target="_blank"
-              className="text-[#69c7cb] hover:text-[#e2626a] hover:underline transition"
-            >
-              View on GitHub →
-            </Link>
-          </div>
-	<div className="bg-white border border-[#a4dddf] p-8 rounded-2xl inline-block">
-            <h3 className="font-bold text-lg mb-2  text-black">IncluSite</h3>
-            <Link
-              href="https://github.com/aditi135/IncluSite"
-              target="_blank"
-              className="text-[#69c7cb] hover:text-[#e2626a] hover:underline transition"
-            >
-              View on GitHub →
-            </Link>
+          <div className="grid md:grid-cols-2 gap-8">
+            {pastProjects.map((project, index) => (
+              <div key={index} className="bg-white border border-[#a4dddf] p-8 rounded-2xl">
+                <h3 className="font-bold text-lg mb-4  text-black">{project.name}</h3>
+                <img 
+                  src={project.image} 
+                  alt={project.name}
+                  className="w-full h-48 object-cover rounded-lg mb-4"
+                />
+                <Link
+                  href={project.github}
+                  target="_blank"
+                  className="text-[#69c7cb] hover:text-[#e2626a] hover:underline transition"
+                >
+                  View on GitHub →
+                </Link>
+              </div>
+            ))}
           </div>
         </div>
       </section>
