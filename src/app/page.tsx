@@ -208,9 +208,18 @@ export default function Home() {
               View on GitHub →
             </Link>
           </div>
+	<div className="bg-white border border-[#a4dddf] p-8 rounded-2xl inline-block">
+            <h3 className="font-bold text-lg mb-2  text-black">IncluSite</h3>
+            <Link
+              href="https://github.com/aditi135/IncluSite"
+              target="_blank"
+              className="text-[#69c7cb] hover:text-[#e2626a] hover:underline transition"
+            >
+              View on GitHub →
+            </Link>
+          </div>
         </div>
       </section>
-
       {/* Contact Section */}
       <section id="contact" className="py-20 px-4 bg-[#69c7cb] text-white">
         <div className="max-w-4xl mx-auto text-center">
